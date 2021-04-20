@@ -10,8 +10,7 @@ Sample assertions:
 assert largest([3,10,3]) == 10
 """
 
-
-def largest(num):
+def largest(list):
     a = len(list)
     list.sort()
     return list[a-1]

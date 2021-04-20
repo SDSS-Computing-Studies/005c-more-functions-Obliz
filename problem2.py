@@ -16,19 +16,18 @@ assert hypotenuse(5,3,True) == 4
 import math
 
 def hypotenuse(a,b,c):
-    if c == False:
-        d = a**2 + b**2
-        d = math.sqrt(d)
-        return d
-    elif c == True:
-        if a > b:
-            d = a**2 - b**2
-            d = math.sqrt(d)
-            return d
-        elif b > a:
-            d = b**2 - a**2
-            d = math.sqrt(d)
-            return d
+    if c == True:
+        p = (a**2)-(b**2)
+        p2 = float(math.sqrt(p))
+        return p2
+    elif c == False:
+        return math.sqrt(a**2 + b**2)
 
 x = hypotenuse(5,3,True)
-print(x)
+print(int(x))
+
+y = hypotenuse(12,5,False)
+print(int(y))
+
+assert hypotenuse(12,5,False) == 13
+assert hypotenuse(5,3,True) == 4

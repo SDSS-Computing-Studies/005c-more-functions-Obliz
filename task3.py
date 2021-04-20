@@ -17,6 +17,9 @@ assert hypotenuse(6,8) == 10
 import math
 
 def hypotenuse(a,b):
-    d = a**2 + b**2
-    d = math.sqrt(d)
-    return d
+    c = a**2 + b**2
+    x = math.sqrt(c)
+    return x
+    pass
+
+assert hypotenuse(6,8) == 10
